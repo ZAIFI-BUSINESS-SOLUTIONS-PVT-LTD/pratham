@@ -1,29 +1,47 @@
-"use client";
-
 import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-import { TopBar } from "@/components/dashboard/TopBar";
-import { StudentView } from "@/components/dashboard/StudentView";
-import { BatchView } from "@/components/dashboard/BatchView";
+import { DashboardClient } from "@/components/dashboard/DashboardClient";
+import { getAllStudents, getAllExams, getStudentData, getBatchData } from "@/lib/data-service";
 
-function DashboardContent() {
-    const searchParams = useSearchParams();
-    const currentView = searchParams.get("view") || "student";
-
-    return (
-        <div className="min-h-screen bg-background font-sans text-foreground">
-            <TopBar />
-            <main className="container mx-auto px-4 py-8 max-w-6xl">
-                {currentView === "student" ? <StudentView /> : <BatchView />}
-            </main>
-        </div>
-    );
+interface PageProps {
+    searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function DashboardPage() {
+export default function DashboardPage({ searchParams }: PageProps) {
+    const students = getAllStudents();
+    const exams = getAllExams();
+
+    const view = (searchParams.view as string) || "student";
+
+    let data = null;
+    let activeStudentId = "";
+    let activeExamId = "";
+
+    if (view === "student") {
+        // Default to first student/exam if not provided
+        activeStudentId = (searchParams.studentId as string) || (students.length > 0 ? students[0].id : "");
+        activeExamId = (searchParams.examId as string) || (exams.length > 0 ? exams[0] : "");
+
+        if (activeStudentId && activeExamId) {
+            data = getStudentData(activeStudentId, activeExamId);
+        }
+    } else {
+        // Default to first exam if not provided
+        activeExamId = (searchParams.examId as string) || (exams.length > 0 ? exams[0] : "");
+        if (activeExamId) {
+            data = getBatchData("CC Batch 1", activeExamId);
+        }
+    }
+
     return (
-        <Suspense fallback={<div className="p-8 text-center">Loading dashboard...</div>}>
-            <DashboardContent />
+        <Suspense fallback={<div className="p-8 text-center text-slate-500">Loading dashboard...</div>}>
+            <DashboardClient
+                initialStudents={students}
+                initialExams={exams}
+                initialData={data}
+                currentView={view}
+                activeStudentId={activeStudentId}
+                activeExamId={activeExamId}
+            />
         </Suspense>
     );
 }

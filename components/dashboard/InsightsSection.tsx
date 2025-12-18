@@ -1,31 +1,34 @@
 import { Card, CardHeader, CardTitle } from "@/components/ui/Card";
-import { StageInsights } from "@/lib/data";
+import { ParsedStageInsight } from "@/lib/types";
 import { Lightbulb, ClipboardList, TrendingUp } from "lucide-react";
 
 interface InsightsSectionProps {
-    insights: StageInsights;
+    insights: ParsedStageInsight;
+    showUplift?: boolean;
 }
 
-export function InsightsSection({ insights }: InsightsSectionProps) {
+export function InsightsSection({ insights, showUplift = true }: InsightsSectionProps) {
     if (!insights) return <div className="text-slate-400 text-sm p-4 border border-dashed border-slate-300 rounded-lg">No data available for this stage.</div>;
 
     return (
         <div className="space-y-6 md:space-y-8">
             {/* Header with Uplift Potential - HERO STYLE */}
-            <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-                <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4">
-                    <div className="p-3 bg-blue-50 rounded-full">
-                        <TrendingUp className="w-8 h-8 text-primary" />
+            {showUplift && (
+                <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+                    <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4">
+                        <div className="p-3 bg-blue-50 rounded-full">
+                            <TrendingUp className="w-8 h-8 text-primary" />
+                        </div>
+                        <div>
+                            <h4 className="text-lg font-bold text-slate-900">Score Uplift Potential</h4>
+                            <p className="text-sm text-slate-500">Estimated gain if actions are taken</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 className="text-lg font-bold text-slate-900">Score Uplift Potential</h4>
-                        <p className="text-sm text-slate-500">Estimated gain if actions are taken</p>
+                    <div className="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">
+                        +{insights.upliftPotential}
                     </div>
                 </div>
-                <div className="text-4xl md:text-5xl font-extrabold text-primary tracking-tighter">
-                    +{insights.upliftPotential}
-                </div>
-            </div>
+            )}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Predictive Insight */}
