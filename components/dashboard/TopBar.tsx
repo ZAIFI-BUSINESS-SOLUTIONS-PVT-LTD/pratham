@@ -18,69 +18,106 @@ export function TopBar() {
 
     return (
         <>
-            <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white shadow-sm">
-                <div className="container mx-auto px-4 md:px-6 py-3 md:h-16 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
-
-                    {/* Mobile: Pratham Logo Top Center */}
-                    <div className="md:hidden w-full flex justify-center border-b border-slate-100 pb-2 mb-1">
-                        <Image src="/pratham.png" alt="Pratham" width={80} height={24} className="h-6 w-auto opacity-90" />
-                    </div>
-
-                    {/* Left: InzightEd Logo */}
-                    <div className="w-full md:w-auto flex items-center justify-between md:justify-start space-x-4">
-                        <Image src="/logo.svg" alt="InzightEd" width={120} height={32} className="h-6 md:h-8 w-auto" priority />
-
-                        {/* Desktop Context */}
-                        <div className="hidden md:block h-6 w-px bg-slate-300 mx-2"></div>
-                        <div className="hidden md:flex items-center space-x-2">
-                            <span className="text-sm font-semibold text-slate-600">IPMAT – Pratham</span>
-                            <span className="text-xs font-medium text-slate-400 bg-slate-100 px-2 py-0.5 rounded-full">Batch 1</span>
+            <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white shadow-sm transition-all duration-200">
+                <div className="container mx-auto px-4 md:px-8">
+                    {/* Desktop Layout */}
+                    <div className="hidden md:flex h-20 items-center justify-between">
+                        {/* Left: InzightEd Logo */}
+                        <div className="flex-1 flex justify-start">
+                            <Image
+                                src="/logo.svg"
+                                alt="InzightEd"
+                                width={140}
+                                height={40}
+                                className="h-10 w-auto object-contain"
+                                priority
+                            />
                         </div>
 
-                        {/* Mobile Context (Simplified) */}
-                        <span className="md:hidden text-xs font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded-full">Batch 1</span>
-                    </div>
-
-                    {/* Right: Controls & Pratham Logo (Desktop) */}
-                    <div className="hidden md:flex items-center space-x-6">
-                        {/* View Toggle */}
-                        <div className="flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200">
-                            <button
-                                onClick={() => setView("student")}
-                                className={cn(
-                                    "flex items-center space-x-2 px-3 py-1.5 rounded-md text-sm font-semibold transition-all",
-                                    currentView === "student"
-                                        ? "bg-white text-primary shadow-sm border border-slate-200"
-                                        : "text-slate-500 hover:text-slate-900"
-                                )}
-                            >
-                                <User className="w-4 h-4" />
-                                <span>Student</span>
-                            </button>
-                            <button
-                                onClick={() => setView("batch")}
-                                className={cn(
-                                    "flex items-center space-x-2 px-3 py-1.5 rounded-md text-sm font-semibold transition-all",
-                                    currentView === "batch"
-                                        ? "bg-white text-primary shadow-sm border border-slate-200"
-                                        : "text-slate-500 hover:text-slate-900"
-                                )}
-                            >
-                                <Users className="w-4 h-4" />
-                                <span>Batch</span>
-                            </button>
+                        {/* Center: Context */}
+                        <div className="flex-1 flex justify-center items-center">
+                            <div className="flex items-center space-x-3 px-4 py-1.5 bg-slate-50 rounded-full border border-slate-100">
+                                <span className="text-base font-bold text-slate-700">IPMAT – Pratham</span>
+                                <div className="h-4 w-px bg-slate-300"></div>
+                                <span className="text-xs font-semibold text-primary bg-blue-50 px-2 py-0.5 rounded-full">Batch 1</span>
+                            </div>
                         </div>
 
-                        {/* Pratham Logo */}
-                        <div className="flex items-center pl-4 border-l border-slate-200">
-                            <Image src="/pratham.png" alt="Pratham" width={100} height={30} className="h-8 w-auto opacity-90" />
+                        {/* Right: Controls & Pratham Logo */}
+                        <div className="flex-1 flex justify-end items-center space-x-6">
+                            {/* View Toggle */}
+                            <div className="flex items-center bg-slate-100 p-1 rounded-lg border border-slate-200">
+                                <button
+                                    onClick={() => setView("student")}
+                                    className={cn(
+                                        "flex items-center space-x-2 px-3 py-1.5 rounded-md text-sm font-semibold transition-all",
+                                        currentView === "student"
+                                            ? "bg-white text-primary shadow-sm border border-slate-200"
+                                            : "text-slate-500 hover:text-slate-900"
+                                    )}
+                                >
+                                    <User className="w-4 h-4" />
+                                    <span>Student</span>
+                                </button>
+                                <button
+                                    onClick={() => setView("batch")}
+                                    className={cn(
+                                        "flex items-center space-x-2 px-3 py-1.5 rounded-md text-sm font-semibold transition-all",
+                                        currentView === "batch"
+                                            ? "bg-white text-primary shadow-sm border border-slate-200"
+                                            : "text-slate-500 hover:text-slate-900"
+                                    )}
+                                >
+                                    <Users className="w-4 h-4" />
+                                    <span>Batch</span>
+                                </button>
+                            </div>
+
+                            {/* Pratham Logo */}
+                            <div className="pl-6 border-l border-slate-200">
+                                <Image
+                                    src="/pratham.png"
+                                    alt="Pratham"
+                                    width={120}
+                                    height={40}
+                                    className="h-9 w-auto object-contain opacity-95"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Mobile Layout */}
+                    <div className="md:hidden flex flex-col items-center py-4 space-y-4">
+                        {/* Logos Row */}
+                        <div className="flex flex-col items-center space-y-3">
+                            <Image
+                                src="/logo.svg"
+                                alt="InzightEd"
+                                width={130}
+                                height={36}
+                                className="h-8 w-auto"
+                                priority
+                            />
+                            <Image
+                                src="/pratham.png"
+                                alt="Pratham"
+                                width={100}
+                                height={30}
+                                className="h-7 w-auto opacity-90"
+                            />
+                        </div>
+
+                        {/* Context */}
+                        <div className="flex items-center space-x-2">
+                            <span className="text-sm font-bold text-slate-700">IPMAT – Pratham</span>
+                            <span className="text-xs font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">Batch 1</span>
                         </div>
                     </div>
                 </div>
             </header>
 
             {/* Mobile Only: View Toggle Bar (Below Header) */}
-            <div className="md:hidden bg-white border-b border-slate-200 p-2 sticky top-[89px] z-40 shadow-sm">
+            <div className="md:hidden bg-white border-b border-slate-200 p-2 sticky top-[140px] z-40 shadow-sm">
                 <div className="flex items-center justify-center bg-slate-100 p-1 rounded-lg border border-slate-200 mx-4">
                     <button
                         onClick={() => setView("student")}
