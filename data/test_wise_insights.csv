@@ -1,111 +1,111 @@
-"id","batch_id","focus","steady","created_at","updated_at","exam_id"
-"1","CC Batch 1","Majority struggled with permutations and combinations, specifically formula application.
+"id","batch_id","exam_id","focus","steady","created_at","updated_at"
+"1","CC Batch 1",2528,"Majority struggled with permutations and combinations, specifically formula application.
 Common difficulty across the cohort in number system concepts and application.
 Reading comprehension errors stemmed from misinterpreted details and inferences.","Most students handled number system concepts confidently, solving accurately.
 Reading comprehension factual questions were answered correctly by many.
-Idioms and phrases were generally well-understood across the cohort.","2025-12-18 21:28:46.753533+05:30","2025-12-18 21:28:46.753533+05:30","85"
-"2","CC Batch 1","Number System concepts and application proved challenging for many students.
+Idioms and phrases were generally well-understood across the cohort.","2025-12-18 21:28:46.753533+05:30","2025-12-18 21:28:46.753533+05:30"
+"2","CC Batch 1",2085,"Number System concepts and application proved challenging for many students.
 Reading Comprehension suffered from misinterpretations and inference errors.
 Vocabulary gaps impacted One-Word Substitution accuracy cohort-wide.","Time and Work concepts were generally well-handled by a number of students.
 Reading Comprehension showed strength in identifying explicit information.
-One-Word Substitution demonstrated good vocabulary for several students.","2025-12-18 21:28:49.88449+05:30","2025-12-18 21:28:49.88449+05:30","88"
-"3","CC Batch 1","Logarithms posed widespread difficulty; properties were not consistently applied.
+One-Word Substitution demonstrated good vocabulary for several students.","2025-12-18 21:28:49.88449+05:30","2025-12-18 21:28:49.88449+05:30"
+"3","CC Batch 1",2526,"Logarithms posed widespread difficulty; properties were not consistently applied.
 Reading Comprehension suffered due to inference failures and time constraints.
 Para Jumbles showed difficulty in establishing logical connections between sentences.","Ratio and Proportions were handled confidently by most students.
 Fill in the Blanks questions were solved accurately, showing strong vocabulary.
-Grammar skills were strong, leading to correct identification of sentence errors.","2025-12-18 21:28:53.183893+05:30","2025-12-18 21:28:53.183893+05:30","81"
-"4","CC Batch 1","Most struggled with function properties, reflected in frequent incorrect responses.
+Grammar skills were strong, leading to correct identification of sentence errors.","2025-12-18 21:28:53.183893+05:30","2025-12-18 21:28:53.183893+05:30"
+"4","CC Batch 1",2409,"Most struggled with function properties, reflected in frequent incorrect responses.
 Permutation and combination concepts posed difficulty for many students.
 Interest calculation (simple/compound) showed repeated formula-level errors.","Reading comprehension was handled confidently by most of the cohort.
 Linear and quadratic equations were solved accurately by a few students.
-Permutation and combination concepts stabilized for some cohort members.","2025-12-18 21:28:56.579415+05:30","2025-12-18 21:28:56.579415+05:30","79"
-"5","CC Batch 1","Majority struggled with Permutations and Combinations applications.
+Permutation and combination concepts stabilized for some cohort members.","2025-12-18 21:28:56.579415+05:30","2025-12-18 21:28:56.579415+05:30"
+"5","CC Batch 1",2185,"Majority struggled with Permutations and Combinations applications.
 Many found Reading Comprehension inference and theme identification challenging.
 Linear and Quadratic Equations formula application created widespread difficulty.","Most students handled Number System questions with confidence.
 Phrasal Verbs usage was strong across the cohort.
-Relations & Functions questions showed a reasonable grasp of fundamentals.","2025-12-18 21:28:59.508051+05:30","2025-12-18 21:28:59.508051+05:30","92"
-"6","CC Batch 1","Many struggled with Number System concepts and application of number properties.
+Relations & Functions questions showed a reasonable grasp of fundamentals.","2025-12-18 21:28:59.508051+05:30","2025-12-18 21:28:59.508051+05:30"
+"6","CC Batch 1",2169,"Many struggled with Number System concepts and application of number properties.
 Phrasal verbs and vocabulary posed broad challenges in correctly interpreting context.
 Permutations and Combinations saw difficulties in formula application and problem setup.","Number System concepts were handled well by many students across question types.
 Reading Comprehension showed strong performance in extracting information and identifying main ideas.
-Sentence Correction demonstrated a generally solid grasp of grammar rules and error identification.","2025-12-18 21:29:02.771048+05:30","2025-12-18 21:29:02.771048+05:30","91"
-"7","CC Batch 1","Linear and Quadratic Equations posed a challenge for many students.
+Sentence Correction demonstrated a generally solid grasp of grammar rules and error identification.","2025-12-18 21:29:02.771048+05:30","2025-12-18 21:29:02.771048+05:30"
+"7","CC Batch 1",2390,"Linear and Quadratic Equations posed a challenge for many students.
 Number System concepts and application proved difficult cohort-wide.
 Vocabulary skills, particularly synonyms/antonyms, require improvement for most.","Permutations and Combinations were handled well by a significant portion.
 Calculus concepts appear stabilised among several students.
-Time and Work problems were solved accurately by multiple students.","2025-12-18 21:29:06.085301+05:30","2025-12-18 21:29:06.085301+05:30","77"
-"8","CC Batch 1","Majority struggled with Number System concepts and application.
+Time and Work problems were solved accurately by multiple students.","2025-12-18 21:29:06.085301+05:30","2025-12-18 21:29:06.085301+05:30"
+"8","CC Batch 1",2391,"Majority struggled with Number System concepts and application.
 Common failure across the cohort in Permutations and Combinations.
 Vocabulary and contextual usage posed a challenge for many students.","Most students handled Calculus questions confidently and correctly.
 Reading Comprehension was a stabilised area for a significant portion.
-Averages showed consistent understanding across multiple students.","2025-12-18 21:29:09.51988+05:30","2025-12-18 21:29:09.51988+05:30","78"
-"9","CC Batch 1","Number System concepts posed widespread challenges.
+Averages showed consistent understanding across multiple students.","2025-12-18 21:29:09.51988+05:30","2025-12-18 21:29:09.51988+05:30"
+"9","CC Batch 1",2298,"Number System concepts posed widespread challenges.
 Probability and Time, Speed, Distance saw repeated formula errors.
 Paragraph Completion revealed difficulties in logical continuation.","Probability concepts handled well by many students.
 Sentence Correction indicates stable grasp of grammar rules.
-Reading Comprehension shows good passage detail understanding.","2025-12-18 21:29:12.487274+05:30","2025-12-18 21:29:12.487274+05:30","95"
-"10","CC Batch 1","Permutations and Combinations posed widespread difficulty in formula application.
+Reading Comprehension shows good passage detail understanding.","2025-12-18 21:29:12.487274+05:30","2025-12-18 21:29:12.487274+05:30"
+"10","CC Batch 1",2300,"Permutations and Combinations posed widespread difficulty in formula application.
 Reading Comprehension: struggled to infer author's intent, missed contextual clues.
 Relations & Functions: function application errors and weak conceptual understanding.","Quantitative Reasoning: most students displayed good logical and analytical abilities.
 Reading Comprehension: many accurately interpreted passages and extracted explicit information.
-Idioms and Phrases: a solid understanding of common idioms was demonstrated.","2025-12-18 21:29:15.888934+05:30","2025-12-18 21:29:15.888934+05:30","97"
-"11","CC Batch 1","Majority struggled with progression pattern identification and formula application.
+Idioms and Phrases: a solid understanding of common idioms was demonstrated.","2025-12-18 21:29:15.888934+05:30","2025-12-18 21:29:15.888934+05:30"
+"11","CC Batch 1",2186,"Majority struggled with progression pattern identification and formula application.
 Number system properties and related problem-solving approaches need strengthening.
 Coordinate geometry and profit/loss formulas presented significant difficulty.","Number system concepts handled confidently by a notable portion of cohort.
 Reading comprehension skills allowed many to extract relevant information effectively.
-Spot the error questions reflect a solid understanding of grammar for some students.","2025-12-18 21:29:19.020945+05:30","2025-12-18 21:29:19.020945+05:30","93"
-"12","CC Batch 1","Majority struggled with function definitions and range calculations.
+Spot the error questions reflect a solid understanding of grammar for some students.","2025-12-18 21:29:19.020945+05:30","2025-12-18 21:29:19.020945+05:30"
+"12","CC Batch 1",2527,"Majority struggled with function definitions and range calculations.
 Common failures in applying permutation and combination formulas.
 Reading comprehension errors stemmed from misinterpreting passage details.","Most students handled logarithm problems confidently.
 Linear and quadratic equation solving was generally strong.
-Idioms and phrases were handled correctly by many students.","2025-12-18 21:29:24.78513+05:30","2025-12-18 21:29:24.78513+05:30","83"
-"13","CC Batch 1","Para Jumble: Most found it challenging to identify logical sentence sequences under time constraints.
+Idioms and phrases were handled correctly by many students.","2025-12-18 21:29:24.78513+05:30","2025-12-18 21:29:24.78513+05:30"
+"13","CC Batch 1",2356,"Para Jumble: Most found it challenging to identify logical sentence sequences under time constraints.
 Linear and Quadratic Equations: Common failure across the cohort in setting up and solving equations.
 Trigonometry: Majority struggled with applying trigonometric identities and formulas accurately.","Data Interpretation: Most students handled data interpretation questions confidently and efficiently.
 Sentence Correction: Good understanding of English grammar rules evident across the cohort.
-Fill in the Blanks: Strong vocabulary and contextual understanding aided in accurate answer selection.","2025-12-18 21:29:28.168396+05:30","2025-12-18 21:29:28.168396+05:30","94"
-"14","CC Batch 1","Majority struggled with Simple and Compound Interest concepts and formula application.
+Fill in the Blanks: Strong vocabulary and contextual understanding aided in accurate answer selection.","2025-12-18 21:29:28.168396+05:30","2025-12-18 21:29:28.168396+05:30"
+"14","CC Batch 1",2301,"Majority struggled with Simple and Compound Interest concepts and formula application.
 Permutations and Combinations presented difficulties in applying formulas and understanding conditions.
 Vocabulary weaknesses impacted performance in antonym questions and contextual understanding.","Ratio and Proportions handled confidently by most, showcasing a strong grasp of concepts.
 Reading Comprehension demonstrated good comprehension skills and quick, accurate responses.
-One-Word Substitution showed robust vocabulary and accurate phrase replacement abilities.","2025-12-18 21:29:31.57304+05:30","2025-12-18 21:29:31.57304+05:30","74"
-"15","CC Batch 1","Linear/quadratic equations posed widespread difficulties with formula application.
+One-Word Substitution showed robust vocabulary and accurate phrase replacement abilities.","2025-12-18 21:29:31.57304+05:30","2025-12-18 21:29:31.57304+05:30"
+"15","CC Batch 1",2299,"Linear/quadratic equations posed widespread difficulties with formula application.
 Number system questions revealed conceptual gaps and calculation errors.
 Idioms and phrases tripped up many, revealing vocabulary and contextual interpretation deficits.","Quantitative reasoning was a consistently strong area across the cohort.
 Reading comprehension was handled well, with accurate inference of main ideas.
-Grammar basics and paragraph completion showed good foundational understanding.","2025-12-18 21:29:34.708135+05:30","2025-12-18 21:29:34.708135+05:30","96"
-"16","CC Batch 1","Partnership problems presented a common area of struggle.
+Grammar basics and paragraph completion showed good foundational understanding.","2025-12-18 21:29:34.708135+05:30","2025-12-18 21:29:34.708135+05:30"
+"16","CC Batch 1",2331,"Partnership problems presented a common area of struggle.
 Permutations, combinations, and probability concepts faltered frequently.
 Trigonometry and progressions proved challenging for multiple students.","Number System concepts were handled correctly by many students.
 Reading Comprehension showed stability across a few test-takers.
-Grammar application was consistently accurate for some students.","2025-12-18 21:29:38.062606+05:30","2025-12-18 21:29:38.062606+05:30","76"
-"17","CC Batch 1","Permutations and Combinations: Many struggled with formula application and logic.
+Grammar application was consistently accurate for some students.","2025-12-18 21:29:38.062606+05:30","2025-12-18 21:29:38.062606+05:30"
+"17","CC Batch 1",2330,"Permutations and Combinations: Many struggled with formula application and logic.
 Time, Speed and Distance: Common failure to apply relative speed effectively.
 Sentence Correction: Difficulty detecting errors in structure and grammar.","Matrices and Determinants: Most students handled matrix operations correctly.
 Quantitative Reasoning: Logical thinking skills are stable across the cohort.
-Reading Comprehension: Strong analytical skills evident in passage interpretation.","2025-12-18 21:29:41.013104+05:30","2025-12-18 21:29:41.013104+05:30","75"
-"18","CC Batch 1","Sets posed a challenge in application of concepts and visualization.
+Reading Comprehension: Strong analytical skills evident in passage interpretation.","2025-12-18 21:29:41.013104+05:30","2025-12-18 21:29:41.013104+05:30"
+"18","CC Batch 1",2410,"Sets posed a challenge in application of concepts and visualization.
 Para Jumble: Sequencing sentences and identifying logical flow proved difficult.
 Vocabulary: Many struggled with nuanced meanings and contextual usage.","Ratio and Proportions: Most students handled concepts effectively and accurately.
 Reading Comprehension: Majority understood main ideas and extracted details.
-Grammar: Many demonstrated a solid grasp of grammatical structure.","2025-12-18 21:29:43.996702+05:30","2025-12-18 21:29:43.996702+05:30","80"
-"19","CC Batch 1","Progression questions posed widespread difficulties in series and formula identification.
+Grammar: Many demonstrated a solid grasp of grammatical structure.","2025-12-18 21:29:43.996702+05:30","2025-12-18 21:29:43.996702+05:30"
+"19","CC Batch 1",2530,"Progression questions posed widespread difficulties in series and formula identification.
 Mensuration troubled many, revealing formula misapplication and visualisation challenges.
 Sentence Correction showed a common struggle with grammar and complex sentence structure.","Number System concepts are largely stabilised, showing solid understanding and application.
 Reading Comprehension demonstrates effective understanding and information retrieval skills.
-Idioms and Phrases reveal good command of vocabulary and contextual application.","2025-12-18 21:29:47.662933+05:30","2025-12-18 21:29:47.662933+05:30","90"
-"20","CC Batch 1","Linear and Quadratic Equations: Majority struggled with applying equations correctly.
+Idioms and Phrases reveal good command of vocabulary and contextual application.","2025-12-18 21:29:47.662933+05:30","2025-12-18 21:29:47.662933+05:30"
+"20","CC Batch 1",2411,"Linear and Quadratic Equations: Majority struggled with applying equations correctly.
 Relations and Functions: Common conceptual gaps impacted accuracy.
 Logarithms: Many skipped or failed, showing a lack of familiarity.","Logarithms: Most students handled basic problems accurately.
 Linear and Quadratic Equations: Many showed proficiency in equation solving.
-Vocabulary: A strong base of lexical resources was demonstrated.","2025-12-18 21:29:50.65803+05:30","2025-12-18 21:29:50.65803+05:30","82"
-"21","CC Batch 1","Number System concepts and properties posed widespread challenges.
+Vocabulary: A strong base of lexical resources was demonstrated.","2025-12-18 21:29:50.65803+05:30","2025-12-18 21:29:50.65803+05:30"
+"21","CC Batch 1",2529,"Number System concepts and properties posed widespread challenges.
 Permutations, Combinations, and Probability: formulas not consistently applied.
 Linear & Quadratic Equations: struggled with application and image-based questions.","Reading Comprehension shows notable strength, especially with explicit details.
 Logarithms handled well by many, showing familiarity with properties.
-Idioms & Phrases: understanding and application were generally accurate.","2025-12-18 21:29:54.241794+05:30","2025-12-18 21:29:54.241794+05:30","87"
-"22","CC Batch 1","Majority struggled with Permutations and Combinations, misapplying formulas.
+Idioms & Phrases: understanding and application were generally accurate.","2025-12-18 21:29:54.241794+05:30","2025-12-18 21:29:54.241794+05:30"
+"22","CC Batch 1",2043,"Majority struggled with Permutations and Combinations, misapplying formulas.
 Common failure across the cohort involved Number System concepts.
 Para Jumble consistently challenged logical sequencing skills.","Most students handled Percentage confidently, showing sound understanding.
 Reading Comprehension was a stabilised area across the cohort.
-Idioms and Phrases were handled correctly by many students.","2025-12-18 21:29:57.696931+05:30","2025-12-18 21:29:57.696931+05:30","73"
+Idioms and Phrases were handled correctly by many students.","2025-12-18 21:29:57.696931+05:30","2025-12-18 21:29:57.696931+05:30"

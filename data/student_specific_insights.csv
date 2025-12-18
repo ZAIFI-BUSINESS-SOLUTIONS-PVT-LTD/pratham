@@ -1,5 +1,5 @@
-"id","batch_id","early_stage","midcourse_stage","preexam_stage","created_at","updated_at","student_id"
-"1","CC Batch 1","EARLY STAGE
+"id","student_lms_id","batch_id","early_stage","midcourse_stage","preexam_stage","created_at","updated_at"
+"1",1637,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Confidence will drop in Quant if basic topics are skipped continuously.
@@ -43,8 +43,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 52 / 100
 * Sizeable focus zone indicates volatility.
 * Requires disciplined execution for upside.
-","2025-12-18 20:40:20.398059+05:30","2025-12-18 20:40:20.398059+05:30","10"
-"2","CC Batch 1","EARLY STAGE
+","2025-12-18 20:40:20.398059+05:30","2025-12-18 20:40:20.398059+05:30"
+"2",3640,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Permutations/Combinations errors will persist due to formula misuse and misinterpretation.
@@ -89,8 +89,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 * Large focus zone indicates significant, but volatile, areas for improvement.
 * Discipline is key to convert practice into exam performance gains.
-","2025-12-18 20:50:46.331218+05:30","2025-12-18 20:50:46.331218+05:30","15"
-"3","CC Batch 1","EARLY STAGE
+","2025-12-18 20:50:46.331218+05:30","2025-12-18 20:50:46.331218+05:30"
+"3",3376,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * RC skills will keep declining without intervention.
@@ -134,8 +134,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 * Focus Zone size indicates volatility and need for disciplined execution.
 * Score reflects potential for improvement with targeted last-mile revisions.
-","2025-12-18 20:51:37.441567+05:30","2025-12-18 20:51:37.441567+05:30","22"
-"4","CC Batch 1","EARLY STAGE
+","2025-12-18 20:51:37.441567+05:30","2025-12-18 20:51:37.441567+05:30"
+"4",17024,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Time management will suffer due to slow formula recall under pressure.
@@ -180,8 +180,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 58 / 100
 *   Volatile areas require disciplined execution to improve scores.
 *   Steady zones offer a solid base if focus areas are addressed.
-","2025-12-18 20:52:00.004623+05:30","2025-12-18 20:52:00.004623+05:30","26"
-"5","CC Batch 1","EARLY STAGE
+","2025-12-18 20:52:00.004623+05:30","2025-12-18 20:52:00.004623+05:30"
+"5",13722,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Misinterpreting question constraints in Permutations and Combinations will persist.
@@ -226,8 +226,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 * Volatile; success depends on exam-day discipline.
 * Requires high focus on error prevention now.
-","2025-12-18 20:52:54.66472+05:30","2025-12-18 20:52:54.66472+05:30","72"
-"6","CC Batch 1","EARLY STAGE
+","2025-12-18 20:52:54.66472+05:30","2025-12-18 20:52:54.66472+05:30"
+"6",17029,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Permutation/Combination errors will persist due to formula confusion and misapplication.
@@ -272,8 +272,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 * Final Focus Zone is large indicating a need for disciplined execution.
 * Low stability requires focused damage control in key areas.
-","2025-12-18 20:53:37.93644+05:30","2025-12-18 20:53:37.93644+05:30","78"
-"7","CC Batch 1","EARLY STAGE
+","2025-12-18 20:53:37.93644+05:30","2025-12-18 20:53:37.93644+05:30"
+"7",3387,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Incorrect application of formulas will persist in Quant.
@@ -318,8 +318,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 *  Fixing basics can prevent critical easy-question losses.
 *  Volatile score; needs disciplined review, error prevention.
-","2025-12-18 20:55:11.133273+05:30","2025-12-18 20:55:11.133273+05:30","135"
-"8","CC Batch 1","EARLY STAGE
+","2025-12-18 20:55:11.133273+05:30","2025-12-18 20:55:11.133273+05:30"
+"8",11296,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Skipping questions will persist due to unfamiliarity.
@@ -364,8 +364,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 25 / 100
 * Many topics still in the Focus Zone; significant knowledge gaps exist.
 * Success depends on damage control; focus on easy wins only.
-","2025-12-18 20:55:30.364351+05:30","2025-12-18 20:55:30.364351+05:30","152"
-"9","CC Batch 1","EARLY STAGE
+","2025-12-18 20:55:30.364351+05:30","2025-12-18 20:55:30.364351+05:30"
+"9",2552,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Number System errors will persist due to weak fundamentals.
@@ -410,8 +410,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 35 / 100
 * Large Focus Zone & inconsistent performance limits potential.
 * Steady Zones exist, but require focused damage control.
-","2025-12-18 20:55:55.158161+05:30","2025-12-18 20:55:55.158161+05:30","172"
-"10","CC Batch 1","EARLY STAGE
+","2025-12-18 20:55:55.158161+05:30","2025-12-18 20:55:55.158161+05:30"
+"10",13731,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Foundational gaps in Calculus will keep impacting accuracy.
@@ -456,8 +456,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 35 / 100
 * Large Focus Zone indicates significant unresolved conceptual gaps.
 * Requires damage control; limited time makes full recovery unlikely.
-","2025-12-18 20:56:17.697491+05:30","2025-12-18 20:56:17.697491+05:30","176"
-"11","CC Batch 1","EARLY STAGE
+","2025-12-18 20:56:17.697491+05:30","2025-12-18 20:56:17.697491+05:30"
+"11",1537,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Permutations/Combinations concepts will remain weak without targeted practice on constraints.
@@ -502,8 +502,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 52 / 100
 *   Sizeable focus zones need attention for score uplift.
 *   Steady zones are unstable, so discipline is critical.
-","2025-12-18 20:56:36.514214+05:30","2025-12-18 20:56:36.514214+05:30","189"
-"12","CC Batch 1","EARLY STAGE
+","2025-12-18 20:56:36.514214+05:30","2025-12-18 20:56:36.514214+05:30"
+"12",16011,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Number System concepts will cause errors and skipped questions.
@@ -548,8 +548,8 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 * Significant focus area indicates volatility and need for disciplined execution.
 * Unstable core concept performance limits realistic score improvement potential.
-","2025-12-18 20:56:55.602703+05:30","2025-12-18 20:56:55.602703+05:30","198"
-"13","CC Batch 1","EARLY STAGE
+","2025-12-18 20:56:55.602703+05:30","2025-12-18 20:56:55.602703+05:30"
+"13",1674,"CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Number system errors will persist without focused practice on properties.
@@ -594,4 +594,4 @@ What exactly to fix
 SUP Score (Score Uplift Potential): 48 / 100
 * Multiple topics need fixing; success requires intense, disciplined effort.
 * Some steady zones exist, but focus areas are critically impacting overall score.
-","2025-12-18 20:57:13.391022+05:30","2025-12-18 20:57:13.391022+05:30","209"
+","2025-12-18 20:57:13.391022+05:30","2025-12-18 20:57:13.391022+05:30"

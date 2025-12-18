@@ -4,7 +4,7 @@ export interface RawStudentInsight {
     early_stage: string;
     midcourse_stage: string;
     preexam_stage: string;
-    student_id: string;
+    student_lms_id: string;
 }
 
 export interface RawTestInsight {
