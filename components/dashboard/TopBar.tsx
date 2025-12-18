@@ -87,23 +87,15 @@ export function TopBar() {
                     </div>
 
                     {/* Mobile Layout */}
-                    <div className="md:hidden flex flex-col items-center py-4 space-y-4">
-                        {/* Logos Row */}
-                        <div className="flex flex-col items-center space-y-3">
-                            <Image
-                                src="/logo.svg"
-                                alt="InzightEd"
-                                width={130}
-                                height={36}
-                                className="h-8 w-auto"
-                                priority
-                            />
+                    <div className="md:hidden flex flex-col items-center py-3 space-y-2">
+                        {/* Pratham Logo Only (InzightEd Removed) */}
+                        <div className="flex justify-center">
                             <Image
                                 src="/pratham.png"
                                 alt="Pratham"
                                 width={100}
                                 height={30}
-                                className="h-7 w-auto opacity-90"
+                                className="h-8 w-auto opacity-95"
                             />
                         </div>
 
@@ -117,8 +109,8 @@ export function TopBar() {
             </header>
 
             {/* Mobile Only: View Toggle Bar (Below Header) */}
-            <div className="md:hidden bg-white border-b border-slate-200 p-2 sticky top-[140px] z-40 shadow-sm">
-                <div className="flex items-center justify-center bg-slate-100 p-1 rounded-lg border border-slate-200 mx-4">
+            <div className="md:hidden bg-white border-b border-slate-200 px-4 py-2 sticky top-[88px] z-40 shadow-sm">
+                <div className="flex items-center justify-center bg-slate-100 p-1 rounded-lg border border-slate-200 w-full">
                     <button
                         onClick={() => setView("student")}
                         className={cn(
