@@ -1,5 +1,5 @@
-"id","student_lms_id","batch_id","early_stage","midcourse_stage","preexam_stage","created_at","updated_at"
-"1",1637,"CC Batch 1","EARLY STAGE
+"id","student_name","batch_id","early_stage","midcourse_stage","preexam_stage","created_at","updated_at"
+"1","Maanya Gupta","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Confidence will drop in Quant if basic topics are skipped continuously.
@@ -44,7 +44,7 @@ SUP Score (Score Uplift Potential): 52 / 100
 * Sizeable focus zone indicates volatility.
 * Requires disciplined execution for upside.
 ","2025-12-18 20:40:20.398059+05:30","2025-12-18 20:40:20.398059+05:30"
-"2",3640,"CC Batch 1","EARLY STAGE
+"2","Saiveer Berry","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Permutations/Combinations errors will persist due to formula misuse and misinterpretation.
@@ -90,7 +90,7 @@ SUP Score (Score Uplift Potential): 48 / 100
 * Large focus zone indicates significant, but volatile, areas for improvement.
 * Discipline is key to convert practice into exam performance gains.
 ","2025-12-18 20:50:46.331218+05:30","2025-12-18 20:50:46.331218+05:30"
-"3",3376,"CC Batch 1","EARLY STAGE
+"3","Ayush Aggarwal","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * RC skills will keep declining without intervention.
@@ -135,7 +135,7 @@ SUP Score (Score Uplift Potential): 48 / 100
 * Focus Zone size indicates volatility and need for disciplined execution.
 * Score reflects potential for improvement with targeted last-mile revisions.
 ","2025-12-18 20:51:37.441567+05:30","2025-12-18 20:51:37.441567+05:30"
-"4",17024,"CC Batch 1","EARLY STAGE
+"4","Ateebhi Sharma","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Time management will suffer due to slow formula recall under pressure.
@@ -181,7 +181,7 @@ SUP Score (Score Uplift Potential): 58 / 100
 *   Volatile areas require disciplined execution to improve scores.
 *   Steady zones offer a solid base if focus areas are addressed.
 ","2025-12-18 20:52:00.004623+05:30","2025-12-18 20:52:00.004623+05:30"
-"5",13722,"CC Batch 1","EARLY STAGE
+"5","Naitik Gupta","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Misinterpreting question constraints in Permutations and Combinations will persist.
@@ -227,7 +227,7 @@ SUP Score (Score Uplift Potential): 48 / 100
 * Volatile; success depends on exam-day discipline.
 * Requires high focus on error prevention now.
 ","2025-12-18 20:52:54.66472+05:30","2025-12-18 20:52:54.66472+05:30"
-"6",17029,"CC Batch 1","EARLY STAGE
+"6","Shourya Rajdev","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Permutation/Combination errors will persist due to formula confusion and misapplication.
@@ -273,7 +273,7 @@ SUP Score (Score Uplift Potential): 48 / 100
 * Final Focus Zone is large indicating a need for disciplined execution.
 * Low stability requires focused damage control in key areas.
 ","2025-12-18 20:53:37.93644+05:30","2025-12-18 20:53:37.93644+05:30"
-"7",3387,"CC Batch 1","EARLY STAGE
+"7","Sneha Dogra","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Incorrect application of formulas will persist in Quant.
@@ -319,7 +319,7 @@ SUP Score (Score Uplift Potential): 48 / 100
 *  Fixing basics can prevent critical easy-question losses.
 *  Volatile score; needs disciplined review, error prevention.
 ","2025-12-18 20:55:11.133273+05:30","2025-12-18 20:55:11.133273+05:30"
-"8",11296,"CC Batch 1","EARLY STAGE
+"8","Nandish .","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Skipping questions will persist due to unfamiliarity.
@@ -365,7 +365,7 @@ SUP Score (Score Uplift Potential): 25 / 100
 * Many topics still in the Focus Zone; significant knowledge gaps exist.
 * Success depends on damage control; focus on easy wins only.
 ","2025-12-18 20:55:30.364351+05:30","2025-12-18 20:55:30.364351+05:30"
-"9",2552,"CC Batch 1","EARLY STAGE
+"9","Shreyansh Garg","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Number System errors will persist due to weak fundamentals.
@@ -411,7 +411,7 @@ SUP Score (Score Uplift Potential): 35 / 100
 * Large Focus Zone & inconsistent performance limits potential.
 * Steady Zones exist, but require focused damage control.
 ","2025-12-18 20:55:55.158161+05:30","2025-12-18 20:55:55.158161+05:30"
-"10",13731,"CC Batch 1","EARLY STAGE
+"10","Kartik Bhardwaj","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Foundational gaps in Calculus will keep impacting accuracy.
@@ -457,7 +457,7 @@ SUP Score (Score Uplift Potential): 35 / 100
 * Large Focus Zone indicates significant unresolved conceptual gaps.
 * Requires damage control; limited time makes full recovery unlikely.
 ","2025-12-18 20:56:17.697491+05:30","2025-12-18 20:56:17.697491+05:30"
-"11",1537,"CC Batch 1","EARLY STAGE
+"11","Jayesh Kumar Agarwal","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Permutations/Combinations concepts will remain weak without targeted practice on constraints.
@@ -503,7 +503,7 @@ SUP Score (Score Uplift Potential): 52 / 100
 *   Sizeable focus zones need attention for score uplift.
 *   Steady zones are unstable, so discipline is critical.
 ","2025-12-18 20:56:36.514214+05:30","2025-12-18 20:56:36.514214+05:30"
-"12",16011,"CC Batch 1","EARLY STAGE
+"12","Daksh Gupta","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Number System concepts will cause errors and skipped questions.
@@ -549,7 +549,7 @@ SUP Score (Score Uplift Potential): 48 / 100
 * Significant focus area indicates volatility and need for disciplined execution.
 * Unstable core concept performance limits realistic score improvement potential.
 ","2025-12-18 20:56:55.602703+05:30","2025-12-18 20:56:55.602703+05:30"
-"13",1674,"CC Batch 1","EARLY STAGE
+"13","Rishabh Gupta","CC Batch 1","EARLY STAGE
 
 What will go wrong
 * Number system errors will persist without focused practice on properties.
