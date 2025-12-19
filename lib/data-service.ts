@@ -75,17 +75,16 @@ function parseCohortZoneContent(content: string): string[] {
 export function getAllStudents(): StudentProfile[] {
     const { studentInsights, testInsights } = csvLoader;
 
-    // Unique student IDs from student_specific_insights.csv (using student_lms_id)
-    // Filter out undefined or empty IDs
-    const studentIds = Array.from(new Set(studentInsights.map(s => s.student_lms_id).filter(id => id)));
+    // Unique student names from student_specific_insights.csv
+    const studentNames = Array.from(new Set(studentInsights.map(s => s.student_name).filter(name => name)));
 
-    return studentIds.map(id => {
-        // Count exams attempted by this student (using student_id in test_insights.csv)
-        const attempts = testInsights.filter(t => t.student_id === id).length;
+    return studentNames.map(name => {
+        // Count exams attempted by this student (using student_name in test_insights.csv)
+        const attempts = testInsights.filter(t => t.student_name === name).length;
 
         return {
-            id,
-            name: `Student ${id}`, // Placeholder as no name map exists
+            id: name, // Using name as ID now
+            name: name,
             batch: "CC Batch 1", // Hardcoded as per CSV data
             examsAttempted: attempts,
             totalExams: 25 // Fixed as per requirements
@@ -95,15 +94,15 @@ export function getAllStudents(): StudentProfile[] {
 
 export function getAllExams(): string[] {
     const { testInsights } = csvLoader;
-    const examIds = Array.from(new Set(testInsights.map(t => t.exam_id).filter(id => id)));
-    return examIds.sort((a, b) => parseInt(a) - parseInt(b));
+    const examNames = Array.from(new Set(testInsights.map(t => t.exam_name).filter(name => name)));
+    return examNames.sort();
 }
 
 export function getStudentData(studentId: string, examId: string) {
     const { studentInsights, testInsights } = csvLoader;
 
-    // Find student using student_lms_id
-    const studentRow = studentInsights.find(s => s.student_lms_id === studentId);
+    // Find student using student_name (passed as studentId)
+    const studentRow = studentInsights.find(s => s.student_name === studentId);
 
     const stages = {
         "Early Stage": parseStageContent(studentRow?.early_stage || ""),
@@ -111,8 +110,8 @@ export function getStudentData(studentId: string, examId: string) {
         "Pre-Exam Stage": parseStageContent(studentRow?.preexam_stage || "")
     };
 
-    // Find test using student_id
-    const testRow = testInsights.find(t => t.student_id === studentId && t.exam_id === examId);
+    // Find test using student_name and exam_name
+    const testRow = testInsights.find(t => t.student_name === studentId && t.exam_name === examId);
 
     const zones = {
         focus: parseZoneContent(testRow?.i_focus || ""),
@@ -125,8 +124,8 @@ export function getStudentData(studentId: string, examId: string) {
 export function getBatchData(batchId: string, examId: string) {
     const { batchInsights, testWiseInsights, testInsights, studentInsights } = csvLoader;
 
-    const totalStudents = new Set(studentInsights.map(s => s.student_lms_id).filter(id => id)).size;
-    const examsAnalyzed = new Set(testInsights.map(t => t.exam_id).filter(id => id)).size;
+    const totalStudents = new Set(studentInsights.map(s => s.student_name).filter(name => name)).size;
+    const examsAnalyzed = new Set(testInsights.map(t => t.exam_name).filter(name => name)).size;
 
     const stats: CohortStats = {
         totalStudents,
@@ -141,7 +140,7 @@ export function getBatchData(batchId: string, examId: string) {
         "Pre-Exam Stage": parseStageContent(batchRow?.preexam_stage || "")
     };
 
-    const testWiseRow = testWiseInsights.find(t => t.batch_id === batchId && t.exam_id === examId);
+    const testWiseRow = testWiseInsights.find(t => t.batch_id === batchId && t.exam_name === examId);
 
     const zones = {
         focus: parseCohortZoneContent(testWiseRow?.focus || ""),
