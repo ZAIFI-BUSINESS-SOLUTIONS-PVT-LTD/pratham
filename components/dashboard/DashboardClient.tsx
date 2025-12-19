@@ -15,6 +15,11 @@ interface DashboardClientProps {
     activeExamId: string;
 }
 
+/**
+ * DashboardClient (Client Component)
+ * Manages the interactive state of the dashboard, specifically navigation between views
+ * and selection of students/exams via URL parameters.
+ */
 export function DashboardClient({
     initialStudents,
     initialExams,
@@ -25,6 +30,10 @@ export function DashboardClient({
 }: DashboardClientProps) {
     const router = useRouter();
 
+    /**
+     * Updates the URL when a student or exam is selected in Student View.
+     * This triggers a server-side re-render with the new data.
+     */
     const handleSelectionChange = (newStudentId: string, newExamId: string) => {
         const params = new URLSearchParams();
         params.set("view", "student");
@@ -33,6 +42,9 @@ export function DashboardClient({
         router.push(`/dashboard?${params.toString()}`);
     };
 
+    /**
+     * Updates the URL when an exam is selected in Batch View.
+     */
     const handleBatchSelectionChange = (newExamId: string) => {
         const params = new URLSearchParams();
         params.set("view", "batch");
@@ -42,8 +54,11 @@ export function DashboardClient({
 
     return (
         <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
+            {/* Sticky Top Navigation Bar */}
             <TopBar />
+
             <main className="container mx-auto px-4 py-8 max-w-6xl">
+                {/* Conditional rendering based on the current view */}
                 {currentView === "student" ? (
                     <StudentView
                         students={initialStudents}

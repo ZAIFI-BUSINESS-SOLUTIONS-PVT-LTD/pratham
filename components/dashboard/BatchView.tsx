@@ -21,8 +21,12 @@ interface BatchViewProps {
 }
 
 const STAGES = ["Early Stage", "Mid-Course Stage", "Pre-Exam Stage"];
-const BATCHES = ["CC Batch 1"]; // Hardcoded as per CSV
+const BATCHES = ["CC Batch 1"]; // Hardcoded for this pilot
 
+/**
+ * BatchView Component
+ * Displays aggregated performance metrics and insights for an entire cohort.
+ */
 export function BatchView({ exams, selectedExamId, data, onSelectionChange }: BatchViewProps) {
     const [selectedBatch, setSelectedBatch] = useState<string>(BATCHES[0]);
     const [activeStage, setActiveStage] = useState<string>(STAGES[0]);
@@ -30,7 +34,7 @@ export function BatchView({ exams, selectedExamId, data, onSelectionChange }: Ba
 
     return (
         <div className="space-y-6 md:space-y-8 animate-in fade-in duration-500 pb-12">
-            {/* Top Controls */}
+            {/* Top Controls: Batch and Exam Selection */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 bg-white p-4 md:p-6 rounded-xl border border-slate-200 shadow-sm">
                 {/* Batch Dropdown */}
                 <div className="relative">
@@ -68,6 +72,7 @@ export function BatchView({ exams, selectedExamId, data, onSelectionChange }: Ba
                 </div>
             </div>
 
+            {/* Placeholder when no data is selected */}
             {!data ? (
                 <div className="flex flex-col items-center justify-center h-48 md:h-64 text-slate-400 border-2 border-dashed border-slate-200 rounded-xl bg-slate-50/50 p-4 text-center">
                     <Users className="w-12 h-12 md:w-16 md:h-16 mb-4 opacity-20" />
@@ -75,7 +80,7 @@ export function BatchView({ exams, selectedExamId, data, onSelectionChange }: Ba
                 </div>
             ) : (
                 <>
-                    {/* Batch Performance Overview */}
+                    {/* Batch Performance Overview: Cohort-level stats */}
                     <Card className="bg-white border-slate-200">
                         <CardHeader className="border-b border-slate-100 pb-4 mb-6">
                             <CardTitle className="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Batch Performance Overview</CardTitle>
@@ -97,7 +102,7 @@ export function BatchView({ exams, selectedExamId, data, onSelectionChange }: Ba
                         </div>
                     </Card>
 
-                    {/* Batch Focus & Steady Zones */}
+                    {/* Batch Focus & Steady Zones: Aggregated test insights */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <ZoneCard
                             title="Batch Focus Zone"
@@ -111,7 +116,7 @@ export function BatchView({ exams, selectedExamId, data, onSelectionChange }: Ba
                         />
                     </div>
 
-                    {/* Stage Insights */}
+                    {/* Stage Insights: Cohort-level predictive and prescriptive data */}
                     <div className="pt-4 md:pt-6">
                         <StageTabs
                             stages={STAGES}
@@ -121,7 +126,7 @@ export function BatchView({ exams, selectedExamId, data, onSelectionChange }: Ba
                         <InsightsSection insights={data.stages[activeStage]} showUplift={false} />
                     </div>
 
-                    {/* Raw Table (Optional) */}
+                    {/* Raw Table: Collapsible table for detailed student scores (Mock data for pilot) */}
                     <div className="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
                         <button
                             onClick={() => setShowRawTable(!showRawTable)}

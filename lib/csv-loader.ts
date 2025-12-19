@@ -3,22 +3,29 @@ import path from 'path';
 import Papa from 'papaparse';
 import { RawStudentInsight, RawTestInsight, RawTestWiseInsight, RawBatchInsight } from './types';
 
-// Helper to read and parse CSV
+/**
+ * Utility function to read a CSV file from the 'data' directory and parse it into an array of objects.
+ * Uses PapaParse for robust CSV parsing.
+ */
 function parseCSV<T>(fileName: string): T[] {
     const filePath = path.join(process.cwd(), 'data', fileName);
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data } = Papa.parse(fileContent, {
         header: true,
         skipEmptyLines: true,
-        dynamicTyping: false, // Keep everything as strings to avoid issues
+        dynamicTyping: false, // Keep everything as strings to maintain data integrity for parsing
     });
     return data as T[];
 }
 
-// Singleton to hold loaded data
+/**
+ * Singleton class responsible for loading and providing access to raw CSV data.
+ * This ensures data is loaded once and shared across the application.
+ */
 class CSVDataLoader {
     private static instance: CSVDataLoader;
 
+    // Raw data arrays corresponding to each CSV file
     public studentInsights: RawStudentInsight[] = [];
     public testInsights: RawTestInsight[] = [];
     public testWiseInsights: RawTestWiseInsight[] = [];
@@ -28,6 +35,9 @@ class CSVDataLoader {
         this.reload();
     }
 
+    /**
+     * Returns the singleton instance of the loader.
+     */
     public static getInstance(): CSVDataLoader {
         if (!CSVDataLoader.instance) {
             CSVDataLoader.instance = new CSVDataLoader();
@@ -35,6 +45,9 @@ class CSVDataLoader {
         return CSVDataLoader.instance;
     }
 
+    /**
+     * Loads or reloads all CSV data from the filesystem.
+     */
     public reload() {
         try {
             this.studentInsights = parseCSV<RawStudentInsight>('student_specific_insights.csv');
@@ -48,4 +61,5 @@ class CSVDataLoader {
     }
 }
 
+// Export a single instance to be used throughout the app
 export const csvLoader = CSVDataLoader.getInstance();
