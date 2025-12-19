@@ -22,11 +22,17 @@ interface StudentViewProps {
 
 const STAGES = ["Early Stage", "Mid-Course Stage", "Pre-Exam Stage"];
 
+/**
+ * StudentView Component
+ * Displays performance metrics and insights for an individual student.
+ */
 export function StudentView({ students, exams, selectedStudentId, selectedExamId, data, onSelectionChange }: StudentViewProps) {
+    // Local state for the active stage tab (Early, Mid, Pre-Exam)
     const [activeStage, setActiveStage] = useState<string>(STAGES[0]);
 
     const selectedStudent = students.find(s => s.id === selectedStudentId);
 
+    // Event handlers for dropdown changes
     const handleStudentChange = (id: string) => {
         onSelectionChange(id, selectedExamId || "");
     };
@@ -37,7 +43,7 @@ export function StudentView({ students, exams, selectedStudentId, selectedExamId
 
     return (
         <div className="space-y-6 md:space-y-8 animate-in fade-in duration-500 pb-12">
-            {/* Top Controls */}
+            {/* Top Controls: Student and Exam Selection */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 bg-white p-4 md:p-6 rounded-xl border border-slate-200 shadow-sm">
                 {/* Student Dropdown */}
                 <div className="relative">
@@ -77,6 +83,7 @@ export function StudentView({ students, exams, selectedStudentId, selectedExamId
                 </div>
             </div>
 
+            {/* Placeholder when no data is selected */}
             {!selectedStudent || !selectedExamId || !data ? (
                 <div className="flex flex-col items-center justify-center h-48 md:h-64 text-slate-400 border-2 border-dashed border-slate-200 rounded-xl bg-slate-50/50 p-4 text-center">
                     <UserCircle className="w-12 h-12 md:w-16 md:h-16 mb-4 opacity-20" />
@@ -84,7 +91,7 @@ export function StudentView({ students, exams, selectedStudentId, selectedExamId
                 </div>
             ) : (
                 <>
-                    {/* Performance Snapshot */}
+                    {/* Performance Snapshot: High-level student info */}
                     <Card className="bg-white border-slate-200">
                         <CardHeader className="border-b border-slate-100 pb-4 mb-6">
                             <CardTitle className="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">Performance Snapshot</CardTitle>
@@ -108,7 +115,7 @@ export function StudentView({ students, exams, selectedStudentId, selectedExamId
                         </div>
                     </Card>
 
-                    {/* Focus & Steady Zones */}
+                    {/* Focus & Steady Zones: Specific test insights */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <ZoneCard
                             title="Focus Zone (This Test)"
@@ -122,7 +129,7 @@ export function StudentView({ students, exams, selectedStudentId, selectedExamId
                         />
                     </div>
 
-                    {/* Stage Insights */}
+                    {/* Stage Insights: Long-term predictive and prescriptive data */}
                     <div className="pt-4 md:pt-6">
                         <StageTabs
                             stages={STAGES}
